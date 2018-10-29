@@ -1,4 +1,4 @@
-![spluga](https://spluga.io/img/spluga-logo-white.png)
+![spluga](https://user-images.githubusercontent.com/1983531/47654849-032d3980-db8c-11e8-8649-d836f712a4a2.png)
 
 # spluga-tracker-js
 
