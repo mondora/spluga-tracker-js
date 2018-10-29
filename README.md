@@ -1,3 +1,5 @@
+![spluga](https://spluga.io/img/spluga-logo-white.png)
+
 # spluga-tracker-js
 
 Simple javascript based activity tracker for spluga
