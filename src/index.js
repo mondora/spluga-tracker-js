@@ -1,5 +1,4 @@
 import axios from "axios";
-import oauth from "axios-oauth-client";
 import { checkMandatory, getLogger } from "./util";
 import { createToken } from "./token";
 
