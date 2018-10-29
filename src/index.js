@@ -37,6 +37,7 @@ const splugaTracker = async (options = {}) => {
                 if (options && options.raiseError) {
                     throw error;
                 }
+                return error;
             }
         };
     } catch (error) {

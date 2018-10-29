@@ -15,7 +15,7 @@ export const createToken = async (options, logger) => {
 
         logger("Spluga: get token");
         const auth = await getClientCredentials();
-        const token = {
+        return {
             access_token: auth.access_token,
             created: new Date().getTime(),
             expires: auth.expires_in,
@@ -23,17 +23,18 @@ export const createToken = async (options, logger) => {
                 const now = new Date().getTime();
                 if ((now - this.created) / 1000 > this.expires - TOLLERANCE) {
                     logger("Spluga: refresh token");
-                    const auth = await getClientCredentials();
-                    this.access_token = auth.access_token;
-                    (this.created = new Date().getTime()), (this.expires = auth.expires_in);
+                    const newToken = await getClientCredentials();
+                    this.access_token = newToken.access_token;
+                    this.created = new Date().getTime();
+                    this.expires = newToken.expires_in;
                 }
                 return this.access_token;
             }
         };
-        return token;
     } catch (error) {
         if (options && options.raiseError) {
             throw error;
         }
+        return error;
     }
 };
