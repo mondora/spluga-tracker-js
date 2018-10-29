@@ -1,7 +1,7 @@
 {
     "name": "spluga-tracker-js",
-    "version": "0.0.1",
-    "main": "index.js",
+    "version": "0.0.2",
+    "main": "lib/index.js",
     "author": "mondora",
     "license": "MIT",
     "private": false,
