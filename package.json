@@ -10,7 +10,8 @@
         "format": "prettier --write 'src/**/*.js'",
         "lint": "eslint src",
         "lint:fix": "eslint src test --fix",
-        "postinstall": "yarn build"
+        "postinstall": "yarn build",
+        "test": "cross-env NODE_PATH=src NODE_ENV=test mocha --require @babel/register --recursive --require @babel/polyfill --exit test"
     },
     "dependencies": {
         "@babel/cli": "^7.1.2",
@@ -24,12 +25,18 @@
         "simple-oauth2": "^2.2.1"
     },
     "devDependencies": {
+        "@babel/register": "^7.0.0",
         "babel-eslint": "^10.0.1",
+        "chai": "^4.2.0",
+        "cross-env": "^5.2.0",
         "eslint": "^5.6.1",
         "eslint-config-airbnb": "^17.1.0",
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-jsx-a11y": "^6.1.2",
         "eslint-plugin-react": "^7.11.1",
-        "prettier": "^1.14.3"
+        "mocha": "^5.2.0",
+        "prettier": "^1.14.3",
+        "sinon": "^7.1.0",
+        "sinon-chai": "^3.2.0"
     }
 }
