@@ -6,7 +6,8 @@ Simple javascript based activity tracker for spluga
 
 ## about
 
-Activity tracker for the spluga ecosystem. More info about spluga can be found at [spluga.io](https://spluga.io/)
+Activity tracker for the spluga ecosystem. More info about spluga can be found at [spluga.io](https://spluga.io/).
+Spluga is based on [Omnia](http://numbersbelieve.com/omnia) software platform.
 
 ## usage
 

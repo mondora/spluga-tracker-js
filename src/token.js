@@ -3,7 +3,7 @@ import oauth from "axios-oauth-client";
 
 const TOLLERANCE = 0.2;
 
-export const createToken = async (options, logger) => {
+const createToken = async (options, logger) => {
     try {
         const getClientCredentials = oauth.client(axios.create(), {
             url: options.tokenEndpoint,
@@ -38,3 +38,5 @@ export const createToken = async (options, logger) => {
         return error;
     }
 };
+
+export default createToken;

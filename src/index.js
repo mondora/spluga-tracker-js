@@ -1,6 +1,6 @@
 import axios from "axios";
 import { checkMandatory, getLogger } from "./util";
-import { createToken } from "./token";
+import createToken from "./token";
 
 const MANDATORY = ["activityEndpoint", "clientId", "clientSecret", "player", "tokenEndpoint"];
 
